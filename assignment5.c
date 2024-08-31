@@ -5,7 +5,7 @@ int main(){
     int a, b, c;
     printf("ENTER THE VALUE OF a AND b\n");
 
-    scanf("%d%d", &a, &b);
+    scanf("%d%d", &a, &b);                         //pending
     c=b ;
     b=a;
     a=c;
