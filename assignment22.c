@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 int main() {
-    int i , factorial ;
+    int i , factorial=1 ;
 
     printf("integer\n") ;
 
@@ -10,8 +10,8 @@ int main() {
 
     while (i>0) 
     {
-        factorial=i*
-        i--
+        factorial=factorial*i;
+        i-- ;
     }
     printf("%d", factorial);
 
