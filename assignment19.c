@@ -2,7 +2,7 @@
 int main(){
 char ch;
 printf("\nenter any character\n");
-scanf("%c\n",&ch);
+scanf("%c",&ch);
 
 if(ch>=97&&ch<=126){
 
