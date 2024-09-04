@@ -8,7 +8,7 @@ void main(){
   scanf("%c",&c);
   int n = c ;
   if((n>=65)&&(n<=90)){
-    printf("%c is an uppercase letter",c);
+    printf("%c is an uppercase letter", c);
   }
   else if((n>=97)&&(n<=122)) {
     printf("%c is a lowercase letter",c);

@@ -5,7 +5,7 @@
 int main() {
     int a, b;
 
-    // Input values from the user
+    
     printf("Enter two numbers a and b \n");
     scanf("%d %d", &a, &b);
     

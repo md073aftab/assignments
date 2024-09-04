@@ -16,6 +16,6 @@ else{
     printf("entered invalid character");
 }
 
-
+return 0;
 
 }
