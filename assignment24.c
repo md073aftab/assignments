@@ -18,9 +18,9 @@ int main() {
 
     switch (n)
     {
-    case 1: printf("ENTER THE VALUE OF X AND Y");
+    case 1: printf("ENTER THE VALUE OF X ");
              
-             scanf("%d%d", &x,&y);
+             scanf("%d", &x);
 
              y= 1+x ;
 
@@ -28,18 +28,18 @@ int main() {
         break;
 
     
-    case 2:  printf("ENTER THE VALUE OF X AND Y");
+    case 2:  printf("ENTER THE VALUE OF X ");
              
-             scanf("%d%d", &x,&y);
+             scanf("%d", &x);
 
              y= 1+(x/n) ;
 
              printf("value of y is %d" ,y);
         break;
 
-    case 3:  printf("ENTER THE VALUE OF X AND Y");
+    case 3:  printf("ENTER THE VALUE OF X ");
              
-             scanf("%d%d", &x,&y);
+             scanf("%d", &x);
 
              y= 1+(n*x) ;
 
@@ -48,11 +48,15 @@ int main() {
 
     }
 
-    if ((n>3)!!(n<1))
+    if ((n>3)||(n<1))
     {
-        printf("ENTER THE VALUE OF X AND Y\n");
+        printf("ENTER THE VALUE OF X \n");
 
-        scanf("")
+        scanf("%d",&x);
+
+        y = 1+(n*x);
+
+        printf("value of y is %d",y);
     }
     
     
