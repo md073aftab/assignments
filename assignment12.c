@@ -6,7 +6,7 @@ int main() {
 
     scanf("%c", &a);
 
-    printf("ASCII CODE OF THE '%c' IS %d", a);
+    printf("ASCII CODE IS %d", a);
     
     return 0;
 }
