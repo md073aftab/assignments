@@ -1,21 +1,18 @@
-#include<stdio.h>
-int main(){
-char ch;
-printf("\nenter any character\n");
-scanf("%c",&ch);
+#include <stdio.h>
 
-if(ch>=97&&ch<=126){
+int main() 
+{
+    char a;
+    printf("Enter any Letter");
+    scanf("%c",&a);
+    int b,d;
+    b=a;
+    d=96<b?b:96;
+    if (d==96)
+        printf("is uper case character");
+    else 
+        printf("it is small case character");
 
-    printf("this is smallcase letter");
-}
-else if(ch>=65&&ch<=126){
 
-    printf("this is uppercase letter");
-}
-else{
-    printf("entered invalid character");
-}
-
-return 0;
-
+    return 0;
 }
