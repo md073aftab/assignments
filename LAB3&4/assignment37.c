@@ -1,4 +1,5 @@
-// THIS IS PROGRAM TO PRINT 1,3,5,7,9………N
+// THIS IS PROGRAM TO PRINT 2,4,6,8,10....N
+
 
 #include <stdio.h>
 int main() {
@@ -9,7 +10,7 @@ int main() {
 
     while (num<=n)
     {
-        if (num%2!=0)
+        if (num%2==0)
         {
             printf("%d ",num);
         }

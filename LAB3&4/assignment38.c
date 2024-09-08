@@ -1,20 +1,17 @@
-// THIS IS PROGRAM TO PRINT 1,3,5,7,9………N
+// THIS IS PROGRAM TO PRINT 1,4,9,16,25,………N.
 
 #include <stdio.h>
 int main() {
-    int n,num=1;
+    int a=1, n,num=1;
 
     printf ("enter n\n");
     scanf("%d",&n);
 
     while (num<=n)
     {
-        if (num%2!=0)
-        {
-            printf("%d ",num);
-        }
+        a=num*num ;
         num++;
-        
+        printf("%d ",a);
     }
     
     return 0;
