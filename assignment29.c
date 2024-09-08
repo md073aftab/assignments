@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main() {
 
-    int num;
+    int num,sum=0,a,number;
     number=num;
 
 
@@ -14,7 +14,10 @@ int main() {
 
     while(num>0)
     {
-        
+       a=num%10 ;
+       num=num/10 ;
+       sum= sum +a*a*a ;
+
 
 
     }
