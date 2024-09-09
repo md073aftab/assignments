@@ -1,31 +1,35 @@
 // THIS IS PROGRAM TO PRINT 1/1!+2/2!+3/3!+4/4!,………N
 
-#include <stdio.h>
+#include<stdio.h>
 int main() {
+    float num = 0, a = 1, b = 1, c, n;
     
-    int a=1,b=1,c=1,n;
-    float num=0 ;
+    printf("Enter n: ");
+    scanf("%f", &n);
     
-
-    printf("enter n\n");
-    scanf("%d",&n);
-    
-    while (a<=n)
-    {
-        while (c<=a)
-        {
-            b=b*c;
-            c++ ;
+    while (a <= n) {
+        
+        b = 1;
+        c = 1;
+        
+        
+        while (c <= a) {
+            b = b * c;
+            c++;
         }
 
-        num=num+(a/b) ;
-        a++ ;
-
         
+        num = num + (a / b);
         
+        a++;  
     }
 
-    printf("%f",num);
+    printf("%f\n", num);
     
     return 0;
 }
+
+
+
+
+
