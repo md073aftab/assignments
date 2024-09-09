@@ -3,7 +3,8 @@
 #include <stdio.h>
 int main() {
     
-    int a=1,b=1,c=1,n,num=0;
+    int a=1,b=1,c=1,n;
+    float num=0 ;
     
 
     printf("enter n\n");
@@ -17,14 +18,14 @@ int main() {
             c++ ;
         }
 
-        num=num+a/b ;
+        num=num+(a/b) ;
         a++ ;
 
         
         
     }
 
-    printf("%d",num);
+    printf("%f",num);
     
     return 0;
 }
