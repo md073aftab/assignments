@@ -3,8 +3,8 @@
 #include <stdio.h>
 int main() {
     
-    int a=1,b=1,c=1,n;
-    long num=0;
+    int a=1,b=1,c=1,n,num=0;
+    
 
     printf("enter n\n");
     scanf("%d",&n);
