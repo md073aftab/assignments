@@ -6,7 +6,32 @@
 // If sales>5000, commission is 12.5%
 
 #include <stdio.h>
-int main() {
-    
+int main()
+ {
+    int sales,comision;
+
+    printf("ENTER SALES\n");
+    scanf("%d",&sales);
+
+    if(sales<=500)
+    {
+        comision= (sales/100)*5 ;
+        printf ("comission: %d",comision);
+    }
+    else if (sales<=2000 && sales>500)
+    {
+        comision = 35 + ((sales-500)*10)/100 ;
+        printf ("comission: %d",comision);
+    }
+    else if (sales>2000 && sales<=5000)
+    {
+        comision = 185 + ((sales-2000)*12/100) ;
+        printf ("comission: %d",comision);
+    }
+    else if (sales>5000)
+    {
+        comision= (sales/100)*12.5  ; 
+        printf ("comission: %d",comision);    
+    } 
     return 0;
 }
