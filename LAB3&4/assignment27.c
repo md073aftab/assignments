@@ -1,31 +1,32 @@
-// this is PROGRAM TO CHECK WHETHER A NO IS PRIME OR NOT
+
+// THIS is PROGRAM TO CHECK WHETHER A NO IS PRIME OR NOT
+
 
 #include <stdio.h>
+
 int main() {
-    int a,i=2;
+    int a, i, flag = 0;
 
-    printf("enter the number\n");
-    scanf("%d",&a);
+    printf("Enter the number\n");
+    scanf("%d", &a);
 
+    
+    if (a <= 1) {
+        printf("Given number is not prime\n");
+        return 0;
+    }
 
-    while (i<a)
-    {
-        if (a%i==0)
-        {
-            printf("given number is not prime\n");
-              i++ ;
-
-        break;
+    for (i = 2; i <= a / 2; i++) {
+        if (a % i == 0) {
+            flag = 1;  
+            break;    
         }
-                              //pending
-      
-        else{
-        printf("given number is prime no\n");
-        break;
     }
-        
-    }
-    
-    
+
+    if (flag == 0)
+        printf("Given number is prime\n");
+    else
+        printf("Given number is not prime\n");
+
     return 0;
 }

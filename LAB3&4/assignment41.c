@@ -1,20 +1,25 @@
-// THIS IS READ A NUMBER N AND PRINT FACTOR OF N.(EX 28= 1,2,4,7,14,28)
+
+// THIS is PROGRAM PRINT FACTOR OF GIVEN NO N.
+
 
 #include <stdio.h>
+
 int main() {
-    int n,s,factorial=1;
+    int a, i;
+
+    printf("Enter the number\n");
+    scanf("%d", &a);
+
+    printf(" factors of %d is:\n",a);
+
     
 
-    printf("enter the number\n");
-    scanf("%d",&n);
-                                    // pending
-    s=n ;
-
-    while (n>0)
-    {
-        factorial=factorial*n ;
-        n-- ;
+    for (i = 1; i <= a ; i++) {
+        if (a % i == 0)
+        {
+            printf("%d\t",i)   ; 
+        }
     }
-    printf("factorial of %d : %d",s,factorial);
+
     return 0;
 }
