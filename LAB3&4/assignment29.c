@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main() {
 
-    int num,sum=0,a,number;
+    int num,pali=0,a,number;
     number=num;
 
 
@@ -16,18 +16,18 @@ int main() {
     {
        a=num%10 ;
        num=num/10 ;
-       sum= sum +a*a*a ;
+       pali= pali*10+a ;
 
 
 
     }
 
-    if(sum=number)
+    if(pali=number)
     {
-        printf("given no is armstrong no");
+        printf("given no is palindromin ");
     }
     else{
-        printf("given no is not armstrong no");
+        printf("given no is not palindromin");
     }
 
     return 0;

@@ -7,7 +7,7 @@ int main() {
 
     printf("enter the number\n");
     scanf("%d",&n);
-
+                                    // pending
     s=n ;
 
     while (n>0)
