@@ -25,10 +25,13 @@ int main() {
         printf("Enter number %d : ", i);
         scanf("%d", &num);
 
-        if (num > max) {
+        if (num > max)
+        {
             second_max = max;
             max = num;
-        } else if (num > second_max && num != max) {
+        }
+        else if (num > second_max && num != max)
+        {
             second_max = num;
         }
     }

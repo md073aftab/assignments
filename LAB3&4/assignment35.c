@@ -12,7 +12,8 @@ int main() {
     scanf("%d", &n);
 
     
-    while (n > 0 || num >= 10) {
+    while (n > 0 || num >= 10)
+    {
         if (n == 0) {
             n = num;
             num = 0;
