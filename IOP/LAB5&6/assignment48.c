@@ -8,10 +8,10 @@ int main() {
         {
             if (j<(6-i))
             {
-                printf(" ");
+                printf("\t");
             }
             else{
-                printf("%d",i+j-5);
+                printf("%d\t",i+j-5);
             }
             
         }
