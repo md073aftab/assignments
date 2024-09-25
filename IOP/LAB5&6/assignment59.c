@@ -7,13 +7,13 @@ int main() {
     for (int i = 0; i < 10; i++)
     {
         printf("enter the value of element %d of arr1 :",i);
-        scanf("%d",arr1[i]);
+        scanf("%d",&arr1[i]);
     }
     printf("\n");
      for (int i = 0; i < 10; i++)
     {
         printf("enter the value of element %d of arr2 :",i);
-        scanf("%d",arr2[i]);
+        scanf("%d",&arr2[i]);
     }
     printf("\n");
      for (int i = 0; i < 10; i++)
@@ -25,13 +25,13 @@ int main() {
     }
      for (int i = 0; i < 10; i++)
     {
-        printf("element %d of arr1 is %d",i,arr1[i]);
+        printf("element %d of arr1 is %d\n",i,arr1[i]);
         
     }
     printf("\n");
     for (int i = 0; i < 10; i++)
     {
-        printf("element %d of arr2 is %d",i,arr2[i]);
+        printf("element %d of arr2 is %d\n",i,arr2[i]);
         
     }
     
