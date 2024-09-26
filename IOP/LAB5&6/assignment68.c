@@ -1,3 +1,5 @@
+// PROGRAM TO READ A 3*3 MATRIX AND MULTIPLY THEIR VALUE AND STORE THEM IN THIRD MATRIX
+
 //  PROGRAM TO READ A 3*3 MATRIX AND SUBTRACT THEIR VALUE AND STORE THEM IN THIRD MATRIX.
 
 #include <stdio.h>
@@ -49,13 +51,13 @@ int main() {
     }
 
 
-     printf("substraction of mat1 and mat2 is :\n");
+     printf("multiplication of mat1 and mat2 is :\n");
 
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            mat3[i][j] = mat1[i][j] - mat2[i][j] ;
+            mat3[i][j] = mat1[i][j] * mat2[i][j] ;
             printf("%d    ",mat3[i][j]);
         
         }
