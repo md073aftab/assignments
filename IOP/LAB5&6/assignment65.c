@@ -1,4 +1,4 @@
-//  PROGRAM TO READ A 3*3 MATRIX AND FINDOUT MAX AND MIN ELEMENT.
+//  PROGRAM TO READ A 3*3 MATRIX AND PRINT ITS TRANSPOSE.
 
 
 #include <stdio.h>
@@ -14,11 +14,24 @@ int main() {
         }
         
     }
+    printf("matrix :\n");
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
             printf("%d  ",arr[i][j]);
+        
+        }
+        printf("\n");
+        
+    }
+    printf("transpose of given matrix is:\n");
+
+     for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%d  ",arr[j][i]);
         
         }
         printf("\n");
