@@ -13,17 +13,22 @@ int main() {
     printf("Enter the number of voters: ");
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         scanf("%d", &votes[i]);
 
-        if (votes[i] >= 1 && votes[i] <= 5) {
+        if (votes[i] >= 1 && votes[i] <= 5)
+        {
             count[i] = votes[i];
-        } else {
+        }
+         else
+        {
             spoilt++;
         }
     }
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+    {
         printf("Candidate %d: %d votes\n", i + 1, count[i]);
     }
 
