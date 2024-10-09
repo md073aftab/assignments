@@ -5,11 +5,11 @@ void fibonacci(int n)
 {
     int a=0,b=1,num=0;
     printf("fabonacci seris is : \n") ;
-    if (n==1)
+    if (n==1 )
     {
         printf("%d ",a) ;
     }
-    if (n==2)
+    if (n==2 || n>2)
     {
         printf("%d %d ",a,b);
     }
