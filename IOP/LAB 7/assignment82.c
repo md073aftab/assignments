@@ -1,29 +1,34 @@
-//  WRITE A FUNCTION TO CALCULATE (NCR) FACTORIAL OF A GIVEN NUMBERS.
-//              NCR = (!N/(!R*!(N-R)));
+//  WRITE A FUNCTION TO CALCULATE (NCR) FACTORIAL OF A GIVEN NUMBERS.NCR = (!N/(!R*!(N-R)));
+
 
 #include <stdio.h>
 
-int factorial(a)
+int factorial(int a)
 {
-    int  fact=1 ;
-                                                       // pending
-    while (a>0) 
+    int fact = 1;
+    while (a > 0)
     {
-        fact=fact*a ;
-        a-- ;
+        fact = fact * a;
+        a--;
     }
-    factorial(a)==fact ;
-    return 0 ;
+    return fact;
 }
-int main(){
-    int NCR,n,r ;
-    printf("enter the value of n and r\n");
-    scanf("%d%d",&n,&r);
 
-    NCR= factorial(n)/(factorial(r)*factorial(n-r));
+int main()
+{
+    int NCR, n, r;
+    printf("Enter the value of n and r:\n");
+    scanf("%d%d", &n, &r);
 
-    printf("NCR of n:%d and r:%d is %d :",n,r,NCR);
+    if (r > n)
+    {
+        printf("Invalid input: r cannot be greater than n.\n");
+        return 1;
+    }
 
-    
+    NCR = factorial(n) / (factorial(r) * factorial(n - r));
+
+    printf("NCR of n:%d and r:%d is: %d\n", n, r, NCR);
+
     return 0;
 }
