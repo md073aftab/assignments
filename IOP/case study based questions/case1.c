@@ -1,7 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    char w1[5],med;
+    printf("enter number of strings to be sorted")
+    scanf("%d",&x);
+    for (int n = 0; n < X; n++)
+    {
+    char (w_"%d",n)[5], med ;
     int i=3 ;
     fgets(w1, sizeof(w1), stdin);
 
@@ -9,9 +13,9 @@ int main()
     {
         if(w1[i]>w1[i-1])
         {
-           med=w1[i];
-            w1[i]=w1[i-1];
-            w1[i-1]= med ;
+           med=(w_"%d",n)[i];
+            (w_"%d",n)[i]=(w_"%d",n)[i-1];
+            (w_"%d",n)[i-1]= med ;
             
             break;
         }
@@ -19,6 +23,9 @@ int main()
         
     }
     puts(w1);
+    }
+    
+   
 
     return 0;
 }

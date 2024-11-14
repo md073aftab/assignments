@@ -1,31 +1,21 @@
-//  PROGRAM TO READ A 3*3 MATRIX AND FINDOUT MAX AND MIN ELEMENT.
-
+// The annual examination results of 10 students are tabulated as follows:
 
 #include <stdio.h>
+
 int main() {
-    int i=0,j=0,arr[3][3];
+    int rollNo[10], subject1[10], subject2[10], subject3[10];
 
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            printf("enter the value of arr[%d][%d]:\n",i,j);
-            scanf("%d", &arr[i][j]);
-        }
-        
-    }
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            printf("%d  ",arr[i][j]);
-        
-        }
-        printf("\n");
-        
+    for (int i = 0; i < 10; i++) {
+        printf("Enter Roll No, Subject 1, Subject 2, Subject 3 marks for student %d: \n", i + 1);
+        scanf("%d %d %d %d", &rollNo[i], &subject1[i], &subject2[i], &subject3[i]);
     }
 
+    printf("Results Table:\n");
+    printf("Roll No\tSubject1\tSubject2\tSubject3\n");
 
-    
+    for (int i = 0; i < 10; i++) {
+        printf("%d\t%d\t\t%d\t\t%d\n", rollNo[i], subject1[i], subject2[i], subject3[i]);
+    }
+
     return 0;
 }
