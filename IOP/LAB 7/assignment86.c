@@ -2,9 +2,10 @@
 
 #include <stdio.h>
 
-void stringlength(sen[])
+void stringlength( char sen[])
 {
-    while (sen[i]!='\0')
+    int count=0,i=0;
+    while(sen[i]!='\0')
     {
         count++ ;
         i++ ;
@@ -18,7 +19,7 @@ int main()
     char sen[500];
     gets(sen);
 
-    stringlength(sen)
+    stringlength(sen);
 
     return 0;
 }
