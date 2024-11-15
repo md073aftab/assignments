@@ -1,0 +1,8 @@
+// WRITE A PROGRAM TO FIND LENGTH OF A GIVEN STRING INCLUDING AND EXCLUDING SPACES USING POINTERS.
+
+#include <stdio.h>
+int main()
+{
+    
+    return 0;
+}
