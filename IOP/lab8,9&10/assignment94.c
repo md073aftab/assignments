@@ -3,14 +3,31 @@
 //  ST =”SVNITJAVA” IS COPIED AS “AVAJTINVS”
 
 #include <stdio.h>
+#include <string.h>
+
 int main()
 {
     int n;
-    char str1[n],str2[n];
-    char *p=str1 ,*q=str2; 
-    gets(str1) ;
+    char str1[20],str2[20];
+    char *p=str1 ,*q ;
+    q=str2; 
 
-    n=sizeof(str1) ;
+
+    gets(str1) ;
+    
+    n = strlen(str1);         //pending
+    
+
+    while (*(p++) != '\0')
+    {
+        *(q+n/4)=*p ;
+        n-- ;
+    }
+
+    puts(str2);
+    
+    printf("%d",n);
+
 
     return 0;
 }
