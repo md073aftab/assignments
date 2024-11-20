@@ -1,7 +1,8 @@
 // THIS IS PROGRAM TO PRINT 1,3,5,7,9………N
 
 #include <stdio.h>
-int main() {
+int main()
+{
     int n,num=1;
 
     printf ("enter n\n");

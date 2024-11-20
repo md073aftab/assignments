@@ -9,7 +9,7 @@ int main() {
     printf("Enter the number of elements\n ");
     scanf("%d", &n);
 
-    if (n < 2)
+    if(n < 2)
     {
         printf("Invalid input. There must be at least two numbers.\n");
         return 0;

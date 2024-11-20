@@ -1,33 +1,29 @@
 // 94).WRITE A PROGRAM TO COPY A STRING IN REVERSE ORDER TO ANOTHER STRING VARIABLE USING 
 // POINTERS.FOR EXAMPLE,
-//  ST =”SVNITJAVA” IS COPIED AS “AVAJTINVS”
+//  ST =”SVNITJAVA” IS COPIED AS “AVAJTINVS” 
 
-#include <stdio.h>
-#include <string.h>
-
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 int main()
 {
-    int n;
-    char str1[20],str2[20];
-    char *p=str1 ,*q ;
-    q=str2; 
+    char *a,*b;
+    a=(char*)malloc(100*sizeof(char));
+    printf("Enter string:");
+    gets(a);
+    b=(char*)malloc(100*sizeof(char));
+    int l=0;
 
+   l= strlen(a) ;
 
-    gets(str1) ;
-    
-    n = strlen(str1);         //pending
-    
-
-    while (*(p++) != '\0')
+    for(int i=0;i<l;i++)
     {
-        *(q+n/4)=*p ;
-        n-- ;
+        *(b+i)=*(a+l-1-i);
     }
+    printf("reversed string:");
 
-    puts(str2);
-    
-    printf("%d",n);
-
-
-    return 0;
+    for(int i=0;i<l;i++)
+    {
+        printf("%c",*(b+i));
+    }
 }

@@ -10,7 +10,8 @@ int main() {
             {
                 printf("\t");
             }
-            else{
+            else
+            {
                 printf("%d\t",i+j-5);
             }
             

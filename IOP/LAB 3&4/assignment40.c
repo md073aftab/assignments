@@ -2,8 +2,9 @@
 // LIST OF NUMBERS READ
 
 #include <stdio.h>
-int main() {
-    int a,sum=0,sums ,n;
+int main()
+{
+    int a,sum=0,sums,n;
     
     printf("enter numbers\n");
     scanf("%d",&n);

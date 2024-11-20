@@ -2,7 +2,8 @@
 
 
 #include <stdio.h>
-int main() {
+int main()
+{
     int n,num=1;
 
     printf ("enter n\n");

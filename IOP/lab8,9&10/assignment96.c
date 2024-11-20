@@ -10,6 +10,7 @@ int main()
     scanf("%d",&n) ;
 
     char str[n][100], ptr[100] ;
+    char *p=str ;
     
     
     for (int i = 0; i <=n; i++)

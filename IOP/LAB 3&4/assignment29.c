@@ -26,7 +26,8 @@ int main() {
     {
         printf("given no is palindromin ");
     }
-    else{
+    else
+    {
         printf("given no is not palindromin");
     }
 

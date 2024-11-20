@@ -8,9 +8,9 @@ int main() {
     printf("enter num\n");
     scanf("%d",&num);
 
-    if (num==2)
+    if (num==)
     {
-        printf("2 is neither prime nor composite\n")
+        printf("1 is neither prime nor composite\n")
     }
     
 

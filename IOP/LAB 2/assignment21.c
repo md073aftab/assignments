@@ -12,22 +12,23 @@ scanf("%d%d",&a,&b);
 switch (operation)
 {
 case '+':
-sum=a+b;
-printf("the sum=%d",sum);
+    sum=a+b;
+    printf("the sum=%d",sum);
     break;
+
 case '-':
-subtraction=a-b;
-printf("substaction=%d",subtraction);
+    subtraction=a-b;
+    printf("substaction=%d",subtraction);
     break;
+
 case '*':
-multiplication=a*b;
-printf("multiplication=%d",multiplication);
-break;
+    multiplication=a*b;
+    printf("multiplication=%d",multiplication);
+    break;
+
 case '/':
-division=a/b;
-printf("division=%d",division);
-
-
+    division=a/b;
+    printf("division=%d",division);
 
 }
 

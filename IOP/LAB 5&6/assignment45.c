@@ -4,7 +4,8 @@
 // haven’t forgotten how to use it!
 
 #include <stdio.h>
-int main() {
+int main()
+{
     // pending 
     return 0;
 }

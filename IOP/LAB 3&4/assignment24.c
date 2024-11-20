@@ -25,7 +25,7 @@ int main() {
              y= 1+x ;
 
              printf("value of y is %d" ,y);
-        break;
+            break;
 
     
     case 2:  printf("ENTER THE VALUE OF X ");
@@ -35,7 +35,7 @@ int main() {
              y= 1+(x/n) ;
 
              printf("value of y is %d" ,y);
-        break;
+             break;
 
     case 3:  printf("ENTER THE VALUE OF X ");
              
@@ -44,7 +44,7 @@ int main() {
              y= 1+(n*x) ;
 
              printf("value of y is %d" ,y);
-        break;    
+             break;    
 
     }
 

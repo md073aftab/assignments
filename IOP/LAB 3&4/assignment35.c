@@ -4,7 +4,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n, num = 0, a;
 
     
@@ -14,7 +15,8 @@ int main() {
     
     while (n > 0 || num >= 10)
     {
-        if (n == 0) {
+        if (n == 0)
+        {
             n = num;
             num = 0;
         }

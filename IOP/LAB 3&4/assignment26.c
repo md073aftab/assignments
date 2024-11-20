@@ -1,7 +1,8 @@
 // THIS IS PROGRAM TO PRINT SUM OF ALL ODD AND EVEN NO B/W 1 TO N
 
 #include <stdio.h>
-int main() {
+int main()
+{
     
 int n,i=1,seven=0,sodd=0;
 

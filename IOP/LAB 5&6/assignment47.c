@@ -6,7 +6,8 @@
 // ABCDE
 
 #include <stdio.h>
-int main(){
+int main()
+{
 
 int ascii = 65, result;
 

@@ -16,15 +16,13 @@ int main() {
         a=num%10;
         num=num/10 ;
         sum=sum +a*a*a;
-
-
     }
-
     if(sum=number)
     {
         printf("given no is armstrong no");
     }
-    else{
+    else
+    {
         printf("given no is not armstrong no");
     }
 

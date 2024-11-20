@@ -1,6 +1,7 @@
 //THIS IS PROGRAM TO READ THREE NOS. AND PRINT MAX
 #include<stdio.h>
-int main(){
+int main()
+{
 
     int a, b , c;
 
@@ -8,19 +9,24 @@ int main(){
 
     scanf("%d%d%d", &a, &b, &c);
 
-    if(a>b){
+    if(a>b)
+    {
 
-        if(a>c){
+        if(a>c)
+        {
             printf("a");
         }
-        else{
+        else
+        {
             printf("c");
         }
     }
-    else if(b>c){
+    else if(b>c)
+    {
         printf("b");
     }
-    else{
+    else
+    {
         printf("c");
     }
 
