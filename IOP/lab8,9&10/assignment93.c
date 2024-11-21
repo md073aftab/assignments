@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char str[100];
     char *p = str;
-    int count = 0;                        // pending
+    int count = 0;                        
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -16,7 +17,8 @@ int main() {
 
     while (*p != '\0') {
         
-        if (*p != ' ' && (*(p + 1) == ' ' || *(p + 1) == '\0')) {
+        if (*p != ' ' && (*(p + 1) == ' ' || *(p + 1) == '\0'))
+        {
             count++;
         }
         p++;

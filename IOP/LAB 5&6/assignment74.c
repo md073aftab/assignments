@@ -20,14 +20,17 @@ int main() {
         }
     }
 
-    while (i < n) {
+    while (i < n)
+    {
         c[k++] = a[i++];
     }
-    while (j < m) {
+    while (j < m)
+    {
         c[k++] = b[j++];
     }
 
-    for (int l = 0; l < n + m; l++) {
+    for (int l = 0; l < n + m; l++)
+    {
         printf("%d ", c[l]);
     }
 

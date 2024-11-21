@@ -4,6 +4,7 @@
 int main()
 {
     int n,a[n],greatest;
+    int *p=a ;
 
     printf("enter number of integers to be checked\n");
     scanf("%d",&n);
@@ -19,14 +20,14 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        if (a[i]>greatest)
+        if (*p>greatest)
         {
-            greatest=a[i] ;
+            greatest=*p++ ;
         }
         
     }
 
-    printf("gretest no from the given numbers is: %d \n", greatest) ;
+    printf("greatest no from the given numbers is: %d \n", greatest) ;
     
     
     return 0;

@@ -12,17 +12,19 @@ void palin_or_not(int num)
        pali= pali*10+a ;
     }
 
-       if(pali=original)
+    if(pali=original)
     {
         printf("given no is palindromin ");
     }
-    else{
+    else
+    {
         printf("given no is not palindromin");
     }
 
 }
 
-int main() {
+int main()
+{
     int num ;
 
     printf("enter no to check if it is palindromin or not\n");

@@ -8,8 +8,8 @@ int main() {
     {
         for (int j = 0; j < 3; j++)
         {
-            printf("enter the value of mat1[%d][%d]:\n",i,j);
-            scanf("%d", &mat1[i][j]);
+            printf("enter the value of mat1[%d][%d]:\n",i,j) ;
+            scanf("%d", &mat1[i][j]) ;
         }
         
     }

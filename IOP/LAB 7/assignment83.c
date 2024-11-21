@@ -11,9 +11,8 @@ int main()
     {
         printf("invalid array size");
     }
-    else{
-    
-
+    else
+    {
     int array[size];
     for (int i = 0; i < size; i++)
     {

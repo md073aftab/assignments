@@ -11,7 +11,7 @@ int main()
     printf("Enter values of array A\n");
     for (int i=0;i<n;i++)
     {
-        printf("enter number %d= ",i+1);
+        printf("enter number %d= ",i);
         scanf("%d",&a[i]);           
     }
     printf("enter number of times u need to rotate array:");

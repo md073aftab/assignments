@@ -9,7 +9,7 @@ int main()
     {
         if(w1[i]>w1[i-1])
         {
-           med=w1[i];
+            med=w1[i];
             w1[i]=w1[i-1];
             w1[i-1]= med ;
             

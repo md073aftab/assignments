@@ -1,7 +1,8 @@
 //  WRITE PROGRAM TO PERFORM LINEAR SEARCH ON AN ARRAY
 
 #include <stdio.h>
-int main() {
+int main()
+{
     int arr[10],a,b=0;
 
     for (int i = 0; i < 10; i++)

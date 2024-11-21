@@ -7,19 +7,27 @@
 
 #include <stdio.h>
 
-int main() {
-    int votes[100], count[5] = {0}, n, spoilt = 0;
+int main()
+{
+    int xxx,spoilt=0,n,q;
+    
 
     printf("Enter the number of voters: ");
-    scanf("%d", &n);
+    scanf("%d",&n);
+    int count[n];
+    count[n]={0};
 
-    for (int i = 0; i < n; i++)
+    for
+    
+    
+     (int i = 0; i < n; i++)
     {
-        scanf("%d", &votes[i]);
+        scanf("%d", &xxx);
 
-        if (votes[i] >= 1 && votes[i] <= 5)
+        if (xxx >= 1 && xxx <= 5)
         {
-            count[i] = votes[i];
+            q = xxx-1;
+            count[q]++  ;
         }
          else
         {
