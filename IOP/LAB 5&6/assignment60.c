@@ -9,7 +9,7 @@ int main(){
     
     for(int i=0; i<num; i++)
     {
-        printf("a[%d]=\t",i);
+        printf("a[i]=\t");
         scanf("%d",&a[i]);
     }
     int min=a[0],q;

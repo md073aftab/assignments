@@ -1,43 +1,39 @@
-// 96) WRITE A C PROGRAM TO SORT THE GIVEN N NUMBER OF STRINGS IN ASCENDING ORDER USING POINTERS.
-
 #include <stdio.h>
 #include <string.h>
-int main()
-{
-    int n ;
 
-    printf("enter the numbers of strings\n") ;
-    scanf("%d",&n) ;
+int main() {
+    int n;
 
-    char str[n][100], ptr[100] ;
-    char *p=str ;
+    printf("Enter the number of strings:\n");
+    scanf("%d", &n);
+    getchar(); 
+
+    char str[n][100], temp[100];
+
     
-    
-    for (int i = 0; i <=n; i++)
-    {
+    printf("Enter the strings:\n");
+    for (int i = 0; i < n; i++) {
         fgets(str[i], sizeof(str[i]), stdin);
-
+        str[i][strcspn(str[i], "\n")] = '\0'; 
     }
 
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            if (strcmp(str[j], str[j + 1]) > 0)
-            { 
-                strcpy(ptr, str[j]);
+    
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (strcmp(str[j], str[j + 1]) > 0) {
+                
+                strcpy(temp, str[j]);
                 strcpy(str[j], str[j + 1]);
-                strcpy(str[j + 1], ptr);
+                strcpy(str[j + 1], temp);
             }
         }
     }
 
-    for (int i = 0; i <=n; i++)
-    {
+    
+    printf("Strings in ascending order \n");
+    for (int i = 0; i < n; i++) {
         puts(str[i]);
     }
-    
-    
-    
+
     return 0;
 }
