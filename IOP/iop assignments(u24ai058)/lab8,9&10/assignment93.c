@@ -14,7 +14,7 @@ int main()
 
     
     str[strcspn(str, "\n")] = '\0';
-
+my name 
     while (*p != '\0') {
         
         if (*p != ' ' && (*(p + 1) == ' ' || *(p + 1) == '\0'))

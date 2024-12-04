@@ -7,7 +7,8 @@ int main() {
     printf("Enter a number for colour :");
     scanf("%d", &color_input);
     my_color = (enum color) color_input;
-    switch (my_color) {
+    switch (my_color)
+    {
         case Red:
             printf("#FF0000\n");
             break;

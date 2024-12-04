@@ -3,11 +3,15 @@
 #include <stdio.h>
 int main()
 {
-    int n,a[n],greatest;
-    int *p=a ;
+    int n;
 
     printf("enter number of integers to be checked\n");
     scanf("%d",&n);
+
+    int a[n],greatest;
+    int *p=a ;
+
+    
 
     printf("enter integers\n");
 
