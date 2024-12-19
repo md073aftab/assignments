@@ -1,10 +1,10 @@
 #include <stdio.h>
-struct item {
+    typedef struct {
     char item_name[20];
     int quantity;
     float price;
     float amount;
-};
+}item;
 float out(int quantity, float price) {
     return (price*quantity);
 }
@@ -13,7 +13,7 @@ int main() {
     printf("Enter the number of items: ");
     scanf("%d",&n);
 
-    struct item comm[n];
+    item comm[n];
 
     for(int i=0; i<n; i++) {
         printf("Enter item  name:");
